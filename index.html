@@ -1,0 +1,1345 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Курс по осознанным снам — Михаил Барышников</title>
+<meta name="description" content="За два месяца — от первых попыток до личной системной практики осознанных снов. 31 урок в 8 модулях, 8 живых разборов, месяц поддержки после курса. Старт 17 октября.">
+<meta name="author" content="Михаил Барышников">
+<meta name="theme-color" content="#0B1020">
+
+<link rel="icon" href="./favicon.svg">
+<link rel="apple-touch-icon" href="./assets/touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" href="./fonts/manrope-400-800-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="./fonts/manrope-400-800-latin.woff2" crossorigin>
+<link rel="stylesheet" href="./fonts.css">
+
+<!-- 🔴 ДО 10.09.2026 СТРАНИЦА ЗАКРЫТА ОТ ПОИСКОВИКОВ. Продажи начинаются 10.09,
+     до этого в выдачу не должна попасть версия, которую ещё правят. В день старта
+     снять эту строку и Disallow в robots.txt — обе правки по одной строке. -->
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://pr-dreamhacking.github.io/course/">
+
+<!-- Превью ссылки: Telegram, VK, WhatsApp. Все кнопки страницы ведут в Telegram,
+     значит ссылку будут пересылать там же — карточка важнее, чем поисковая выдача.
+     Адреса абсолютные: относительный путь соцсети не подтягивают. -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pr-dreamhacking.github.io/course/">
+<meta property="og:site_name" content="Лаборатория сознания">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="За два месяца — от первых попыток до личной практики осознанных снов">
+<meta property="og:description" content="За два месяца — от первых попыток до личной системной практики осознанных снов. 31 урок в 8 модулях, 8 живых разборов, месяц поддержки после курса. Старт 17 октября.">
+<meta property="og:image" content="https://pr-dreamhacking.github.io/course/assets/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Курс по осознанным снам, старт 17 октября">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="За два месяца — от первых попыток до личной практики осознанных снов">
+<meta name="twitter:description" content="За два месяца — от первых попыток до личной системной практики осознанных снов. 31 урок в 8 модулях, 8 живых разборов, месяц поддержки после курса. Старт 17 октября.">
+<meta name="twitter:image" content="https://pr-dreamhacking.github.io/course/assets/og.png">
+<style>
+:root{
+  --night:#0B1020; --paper:#F4F1E9; --indigo:#4832FF; --yellow:#FCEF00;
+  --depth:#182647;
+  --font:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --shell:min(1160px, 88vw);
+  --bar:64px;
+}
+*{box-sizing:border-box}
+html{background:var(--paper);scrollbar-color:rgba(11,16,32,.22) var(--paper)}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--paper)}
+::-webkit-scrollbar-thumb{background:rgba(11,16,32,.22)}
+::selection{background:var(--indigo);color:var(--night)}
+body{margin:0;font-family:var(--font);background:var(--paper);color:var(--night);
+  -webkit-font-smoothing:antialiased}
+.wrap{width:var(--shell);margin:0 auto}
+
+/* шапка */
+.bar{position:fixed;top:0;left:0;right:0;z-index:20;height:var(--bar);
+  background:var(--paper);box-shadow:inset 0 0 0 100vh rgba(24,38,71,.055);
+  border-bottom:1px solid rgba(11,16,32,.12);
+  display:flex;align-items:center}
+.bar .wrap{display:flex;align-items:center;gap:2rem}
+.brand{font-weight:800;font-size:1.0625rem;letter-spacing:-.015em}
+.brand i{font-style:normal;color:var(--indigo)}
+.nav{margin-left:auto;display:flex;gap:1.7rem}
+.nav a{color:rgba(11,16,32,.66);text-decoration:none;font-size:.875rem;font-weight:600}
+.nav a:hover{color:var(--night)}
+.cta{display:inline-block;background:var(--indigo);color:var(--paper);text-decoration:none;
+  font-weight:700;padding:.9rem 1.65rem;font-size:.9375rem}
+.cta--s{padding:.56rem 1.1rem;font-size:.875rem}
+
+/* экран: обе колонки одной высоты */
+.hero{min-height:min(100svh, 800px);
+  padding:calc(var(--bar) + clamp(1.6rem,4vh,2.6rem)) 0 clamp(1.6rem,4vh,2.6rem);
+  display:flex;flex-direction:column;justify-content:center;gap:clamp(1.8rem,5vh,3.4rem)}
+.grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);
+  gap:clamp(1.6rem,2.6vw,2.8rem);align-items:center}
+.col{display:flex;flex-direction:column;justify-content:center;min-width:0}
+/* поля слева и справа равны: видео живёт внутри общего поля */
+.col--media{margin-right:0;justify-content:flex-end}
+
+h1{font-size:clamp(1.6rem,2.9vw,2.5rem);line-height:1.34;letter-spacing:-.035em;
+  font-weight:800;margin:0 0 1.4rem}
+.ln{display:block;white-space:nowrap}
+h1 u{text-decoration:none;background-image:linear-gradient(var(--yellow),var(--yellow));
+  background-size:100% .28em;background-position:0 88%;background-repeat:no-repeat;
+  padding:0 .06em}
+.sub{font-size:clamp(.98rem,1.15vw,1.0625rem);line-height:1.6;font-weight:700;margin:0 0 1.3rem}
+.vid{font-size:.9375rem;line-height:1.5;margin:1.05rem 0 0;color:rgba(11,16,32,.70);
+  text-align:center}
+.act{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
+.link{color:var(--night);text-decoration:none;font-weight:600;font-size:.9375rem;
+  border-bottom:2px solid var(--indigo);padding-bottom:.12rem}
+.without{margin:1.4rem 0 0;font-size:.875rem;line-height:1.45;color:rgba(11,16,32,.62)}
+
+/* видео */
+.play{width:100%;aspect-ratio:16/9;position:relative;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:.95rem;background:var(--night);
+  background-image:radial-gradient(74% 92% at 50% 46%, rgba(72,50,255,.44), transparent 66%)}
+.play__btn{width:60px;height:60px;background:var(--indigo);display:grid;
+  place-items:center;box-shadow:0 16px 44px -16px var(--indigo)}
+.play__btn svg{width:17px;height:17px;margin-left:3px}
+.play__cap{font-size:.8125rem;
+  color:rgba(244,241,233,.62)}
+
+/* цифры — под видео, в той же колонке */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;
+  margin:0;padding:1.4rem 0 0;list-style:none;
+  border-top:1px solid rgba(11,16,32,.16)}
+.facts li{display:flex;flex-direction:column;gap:.3rem}
+.facts b{font-size:1.75rem;font-weight:800;letter-spacing:-.03em;line-height:1;
+  font-variant-numeric:tabular-nums}
+.facts span{font-size:.8125rem;line-height:1.3;color:rgba(11,16,32,.62);white-space:nowrap}
+.facts li:first-child b{color:var(--indigo)}
+
+/* ── блок 2: конструктор ── */
+.band{padding:clamp(3.5rem,8vh,6rem) 0;border-top:1px solid rgba(11,16,32,.10)}
+.eyebrow{font-size:.875rem;
+  color:var(--indigo);font-weight:700;margin:0 0 .9rem}
+h2{font-size:clamp(1.5rem,2.6vw,2.25rem);line-height:1.18;letter-spacing:-.035em;
+  font-weight:800;margin:0 0 .9rem;max-width:20ch}
+.band__lede{font-size:clamp(.98rem,1.15vw,1.0625rem);line-height:1.55;margin:0 0 clamp(2rem,4vh,3rem);
+  max-width:52ch;color:rgba(11,16,32,.72)}
+
+/* антураж: гипнограмма — реальный график фаз сна, фоном тёмных полос */
+.band--dark, .band--night{position:relative;overflow:hidden}
+.band--dark::before{display:none}
+.band--night::before{content:'';position:absolute;left:0;right:0;bottom:0;
+  height:min(46%, 320px);opacity:.16;pointer-events:none;
+  background-repeat:no-repeat;background-size:100% 100%;background-position:bottom;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cpath d='M0 40 H90 V95 H175 V150 H260 V95 H330 V20 H400 V95 H480 V150 H560 V180 H640 V95 H700 V20 H770 V95 H850 V150 H930 V95 H1000 V20 H1080 V60 H1200' fill='none' stroke='%234832FF' stroke-width='2'/%3E%3C/svg%3E")}
+.band--dark > .wrap, .band--night > .wrap{position:relative;z-index:1}
+
+/* мягкий стык светлого и тёмного — как рассвет */
+.band--dark::after, .band--night::after{content:'';position:absolute;left:0;right:0;top:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(72,50,255,.65),transparent)}
+
+/* дыхание у видео — очень медленное, почти незаметное */
+@media(prefers-reduced-motion:no-preference){
+  .play__btn{animation:breathe 6s ease-in-out infinite}
+}
+@keyframes breathe{0%,100%{box-shadow:0 16px 44px -16px var(--indigo)}
+  50%{box-shadow:0 16px 60px -14px var(--indigo)}}
+
+/* нажатие: кнопка отвечает на палец */
+.cta,.arw,.tile,.link{transition-property:transform,background-color,border-color,color;
+  transition-duration:.2s;transition-timing-function:cubic-bezier(.2,.8,.2,1)}
+.cta:active,.arw:active{transform:scale(.97)}
+
+/* тёмная полоса — отличается от первого экрана */
+.band--dark{background:var(--depth);color:var(--paper);border-top:0}
+.band--dark .eyebrow{color:rgba(244,241,233,.55)}
+.band--dark h2{color:var(--paper)}
+
+.ctor{display:grid;gap:clamp(1.6rem,3vh,2.4rem);margin-top:clamp(1.8rem,4vh,2.8rem)}
+.ctor__tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:.6rem}
+.tile{position:relative;min-height:5.6rem;border:1px dashed rgba(244,241,233,.26);
+  background:transparent;cursor:pointer;padding:.85rem .9rem;display:flex;
+  flex-direction:column;justify-content:space-between;align-items:flex-start;text-align:left;
+  transition:background-color .45s ease,border-color .35s ease,transform .22s ease}
+.tile__n{font-size:.75rem;font-weight:800;letter-spacing:.06em;color:rgba(244,241,233,.58);
+  transition:color .35s ease}
+.tile__t{font-size:.9375rem;font-weight:700;letter-spacing:-.02em;line-height:1.25;
+  color:rgba(244,241,233,.62);transition:color .35s ease}
+.tile.is-set{background:var(--indigo);border-color:var(--indigo);border-style:solid}
+.tile.is-set .tile__n{color:rgba(244,241,233,.72)}
+.tile.is-set .tile__t{color:var(--paper)}
+.tile.is-now{border:1px solid var(--paper);background:rgba(244,241,233,.06)}
+.tile.is-now .tile__n{color:rgba(244,241,233,.58)}
+.tile.is-now .tile__t{color:var(--paper)}
+.tile:hover{transform:translateY(-2px)}
+/* ключевой шаг — основная работа курса */
+.tile--key{border-color:rgba(244,241,233,.26)}
+.tile--key::before{content:'';position:absolute;left:-1px;right:-1px;top:-1px;height:3px;
+  background:var(--indigo)}
+.tile--key .tile__n{color:rgba(244,241,233,.58)}
+.tile--key.is-set{background:var(--indigo);border-color:var(--paper)}
+.tile--key.is-set .tile__n,.tile--key.is-set .tile__t{color:var(--night)}
+.tile--key.is-now{border-color:var(--indigo);background:rgba(72,50,255,.16)}
+.tile__t{min-height:2.4em;display:flex;align-items:flex-end}
+.tile__t{hyphens:none}
+
+.ctor__side{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(1.5rem,3vw,3rem);
+  align-items:start;padding-top:clamp(1.2rem,2.5vh,1.8rem);
+  border-top:1px solid rgba(244,241,233,.16)}
+.ctor__pages{min-height:6.5rem}
+.ctor .page h3{font-size:clamp(1.15rem,1.6vw,1.45rem);letter-spacing:-.03em;font-weight:800;
+  margin:0 0 .6rem;color:var(--paper)}
+.ctor .page p{margin:0;font-size:clamp(.94rem,1.08vw,1rem);line-height:1.6;
+  color:rgba(244,241,233,.78);max-width:64ch}
+.ctor .page.in{animation:pin .4s ease both}
+@keyframes pin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.ctor__nav{display:flex;align-items:center;gap:.9rem}
+.arw{width:2.5rem;height:2.5rem;border:1px solid rgba(244,241,233,.28);background:transparent;
+  color:var(--paper);font-size:1.25rem;line-height:1;cursor:pointer;
+  transition:background-color .2s ease,border-color .2s ease}
+.arw:hover{background:var(--indigo);border-color:var(--indigo)}
+.ctor__count{font-size:.875rem;color:rgba(244,241,233,.55);font-variant-numeric:tabular-nums;
+  white-space:nowrap}
+.ctor__count b{color:var(--paper);font-weight:800}
+
+/* ── общие для блоков 3–11 ── */
+.band--paper{background:var(--paper);box-shadow:inset 0 0 0 100vh rgba(24,38,71,.05)}
+.band--night{background:var(--night);color:var(--paper)}
+.band--night h2{color:var(--paper)}
+.band__lede--dark{color:rgba(244,241,233,.75)}
+.band--dark .band__lede{color:rgba(244,241,233,.75)}
+
+/* чему научитесь */
+.learn{list-style:none;margin:clamp(1.6rem,3.5vh,2.4rem) 0 0;padding:0;display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:column;grid-template-rows:repeat(5,auto);
+  gap:0 clamp(2rem,4vw,4rem)}
+.learn li{display:grid;grid-template-columns:2.2rem 1fr;gap:.8rem;align-items:baseline;
+  padding:1rem 0;border-top:1px solid rgba(11,16,32,.12);font-size:clamp(.94rem,1.06vw,1rem);
+  line-height:1.5}
+.learn__n{font-size:.75rem;font-weight:800;color:var(--indigo);letter-spacing:.05em}
+.learn b{font-weight:800}
+
+/* ритм недели */
+
+/* программа */
+.mods{margin-top:clamp(1.6rem,3.5vh,2.4rem);border-top:1px solid rgba(244,241,233,.16)}
+.mod{border-bottom:1px solid rgba(244,241,233,.16)}
+.mod summary{display:grid;grid-template-columns:2.6rem 1fr;gap:1rem;align-items:center;
+  padding:1.05rem 0;cursor:pointer;list-style:none}
+.mod summary::-webkit-details-marker{display:none}
+.mod__n{font-size:.8125rem;font-weight:800;color:rgba(244,241,233,.6)}
+.mod__t{font-size:clamp(1rem,1.2vw,1.125rem);font-weight:700;letter-spacing:-.02em}
+.mod__c{font-size:.8125rem;color:rgba(244,241,233,.58);white-space:nowrap}
+.mod[open] .mod__t{color:var(--paper)}
+.mod ul{margin:0 0 1.2rem;padding:0 0 0 3.6rem;list-style:none;display:grid;gap:.5rem}
+.mod li{font-size:.9375rem;line-height:1.5;color:rgba(244,241,233,.74);position:relative}
+.mod li::before{content:'';position:absolute;left:-1rem;top:.62em;width:.35rem;height:1px;
+  background:rgba(244,241,233,.5)}
+/* частые вопросы — на светлом фоне, устроены как модули программы */
+.faq{border-top:1px solid rgba(11,16,32,.14);max-width:52rem}
+.faq__q{border-bottom:1px solid rgba(11,16,32,.14)}
+.faq__q summary{display:grid;grid-template-columns:1fr 1.25rem;gap:1rem;align-items:center;
+  padding:1.05rem .6rem;margin-inline:-.6rem;cursor:pointer;list-style:none;
+  font-size:clamp(1rem,1.2vw,1.125rem);font-weight:700;letter-spacing:-.02em;
+  transition:background-color .25s ease}
+.faq__q summary::-webkit-details-marker{display:none}
+.faq__q summary::after{content:'+';justify-self:end;font-size:1.25rem;font-weight:500;
+  line-height:1;color:var(--indigo)}
+.faq__q[open] summary::after{content:'−'}
+.faq__q summary:hover{background:rgba(11,16,32,.04)}
+.faq__q p{margin:0 0 1.2rem;font-size:.9375rem;line-height:1.6;color:rgba(11,16,32,.74);max-width:64ch}
+.faq__q a{color:var(--night);text-decoration:none;border-bottom:2px solid var(--indigo)}
+.mod__n{align-self:start;padding-top:.22rem}
+@media(max-width:480px){h1{font-size:min(1.6rem,5.7vw)}}
+@media(max-width:360px){.mod__t{font-size:.9375rem}}
+.mod__b{display:grid;gap:.35rem}
+.mod__r{font-size:.875rem;line-height:1.45;font-weight:500;color:rgba(244,241,233,.66);max-width:62ch}
+.mod__r b{font-weight:700;color:rgba(244,241,233,.86)}
+.final__why{margin:.2rem auto 0;max-width:40ch;font-size:clamp(.98rem,1.15vw,1.0625rem);line-height:1.5;
+  color:rgba(244,241,233,.82);text-align:center}
+.legal{background:var(--night);color:rgba(244,241,233,.6);padding:1.6rem 0 2rem;font-size:.8125rem;line-height:1.6}
+.legal p{margin:0 0 .4rem}
+.legal__req{display:flex;flex-wrap:wrap;gap:.1rem 1.1rem}
+.legal a{color:rgba(244,241,233,.86);text-decoration:none;border-bottom:1px solid rgba(244,241,233,.3)}
+.legal a:hover{border-bottom-color:var(--indigo)}
+.legal__docs{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem}
+/* плашка с ценой внизу экрана: появляется после первого экрана */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:19;background:var(--paper);
+  box-shadow:inset 0 0 0 100vh rgba(24,38,71,.055);border-top:1px solid rgba(11,16,32,.12);
+  padding:.7rem 0;transform:translateY(100%);visibility:hidden;
+  transition:transform .3s ease,visibility 0s linear .3s}
+.dock.is-on{transform:none;visibility:visible;transition:transform .3s ease}
+.dock__in{display:flex;align-items:center;justify-content:center;gap:1.6rem}
+.dock__t{margin:0;font-size:.9375rem;color:rgba(11,16,32,.72)}
+.dock__t b{color:var(--night);font-weight:800;font-size:1.0625rem;letter-spacing:-.02em}
+.dock__cta{padding:.7rem 1.6rem;font-size:.9375rem;white-space:nowrap}
+@media(max-width:480px){
+  .dock__in{justify-content:space-between;gap:.8rem}
+  .dock__t{font-size:.8125rem;line-height:1.35}
+  .dock__t b{font-size:.9375rem;display:block}
+  .dock__cta{padding:.65rem 1.1rem;font-size:.875rem}
+}
+@media(prefers-reduced-motion:reduce){.dock,.dock.is-on{transition:none}}
+.hero-price{margin:1.1rem 0 0;font-size:.9375rem;color:rgba(11,16,32,.72)}
+.hero-price b{color:var(--night);font-weight:800;font-size:1.125rem;letter-spacing:-.02em}
+/* «Знакомо?» — ситуации словами людей */
+.znak__list{list-style:none;margin:clamp(1rem,2.5vh,1.6rem) 0 0;padding:0;display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}
+.znak__list li{background:rgba(255,255,255,.55);border:1px solid rgba(11,16,32,.1);padding:1.1rem 1.25rem;
+  font-size:clamp(.98rem,1.15vw,1.0625rem);line-height:1.5;font-weight:600}
+.znak__end{margin:.8rem 0 0;padding:1.2rem 1.4rem;background:var(--indigo);color:var(--paper);
+  font-size:clamp(1rem,1.3vw,1.1875rem);line-height:1.5;font-weight:700}
+@media(max-width:760px){.znak__list{grid-template-columns:1fr}}
+/* было → стало */
+.bs{list-style:none;margin:clamp(1rem,2.5vh,1.6rem) 0 0;padding:0;display:grid;gap:.6rem}
+.bs li{display:grid;grid-template-columns:minmax(0,1fr) 2rem minmax(0,1.3fr);align-items:center;gap:.8rem;
+  padding:1rem 1.2rem;background:rgba(255,255,255,.55);border:1px solid rgba(11,16,32,.1)}
+.bs__was{font-size:.9375rem;line-height:1.45;color:rgba(11,16,32,.55)}
+.bs__arr{color:var(--indigo);font-weight:700;text-align:center}
+.bs__now{font-size:clamp(.98rem,1.15vw,1.0625rem);line-height:1.45;font-weight:700}
+@media(max-width:600px){.bs li{grid-template-columns:1fr;gap:.25rem}.bs__arr{text-align:left}}
+/* календарь потока */
+.cal{width:100%;max-width:300px;margin-inline:auto;border:2px solid var(--depth);background:rgba(255,255,255,.55)}
+.cal__head{background:var(--depth);color:var(--paper);font-weight:700;font-size:.9375rem;padding:.6rem .9rem}
+.cal__grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:.25rem;padding:.7rem}
+.cal__wd{text-align:center;font-size:.75rem;font-weight:700;color:rgba(11,16,32,.5);padding-bottom:.15rem}
+.cal__d{aspect-ratio:1;display:grid;place-items:center;font-size:.8125rem;font-weight:600;color:var(--night)}
+.cal__d--off{color:rgba(11,16,32,.28)}
+.cal__d--start{background:var(--indigo);color:var(--paper);font-weight:800}
+.cal__d--lesson{box-shadow:inset 0 0 0 2px var(--indigo);color:var(--indigo);font-weight:800}
+.cal__legend{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem 1.2rem;margin-top:.75rem;
+  font-size:.8125rem;color:rgba(11,16,32,.66)}
+.cal__key{display:inline-block;width:.8rem;height:.8rem;margin-right:.4rem;vertical-align:-.1em}
+.cal__key--start{background:var(--indigo)}
+.cal__key--lesson{box-shadow:inset 0 0 0 2px var(--indigo)}
+.lvl2{margin:clamp(1.6rem,3.5vh,2.4rem) 0 0;padding:1.5rem 1.6rem;
+  border:1px solid rgba(244,241,233,.22);background:rgba(244,241,233,.04)}
+.lvl2__lab{display:block;font-size:.875rem;
+  color:rgba(244,241,233,.72);font-weight:700;margin-bottom:.5rem}
+.lvl2 h3{margin:0 0 .6rem;font-size:1.25rem;letter-spacing:-.02em;color:var(--paper)}
+.lvl2 p{margin:0;font-size:.9375rem;line-height:1.6;color:rgba(244,241,233,.78);max-width:64ch}
+
+/* три состояния */
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1.2rem,2.4vw,2.2rem);
+  margin-top:clamp(1.6rem,3.5vh,2.4rem)}
+.st{padding-top:1.1rem;border-top:2px solid var(--night)}
+.st h3{margin:0 0 .6rem;font-size:1.0625rem;letter-spacing:-.02em}
+.st p{margin:0;font-size:.9375rem;line-height:1.55;color:rgba(11,16,32,.7)}
+
+/* гарантии */
+.gu{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);
+  gap:clamp(1.6rem,3vw,3rem);margin-top:clamp(1.6rem,3.5vh,2.4rem)}
+.gu ul{margin:0;padding:0;list-style:none;display:grid;gap:.7rem}
+.gu__yes{padding:1rem 0 0;border-top:1px solid rgba(11,16,32,.16)}
+.gu__yes li{padding-left:1.5rem;position:relative;font-size:clamp(.94rem,1.06vw,1rem);line-height:1.5}
+.gu__yes li::before{content:'';position:absolute;left:0;top:.55em;width:.6rem;height:.6rem;
+  background:var(--indigo)}
+.gu__no{padding:1rem 0 0;border-top:1px solid rgba(11,16,32,.16)}
+.gu__no h3{margin:0 0 .8rem;font-size:.9375rem;letter-spacing:.02em}
+.gu__no li{font-size:.875rem;line-height:1.45;color:rgba(11,16,32,.62);padding-left:1.1rem;position:relative}
+.gu__no li::before{content:'—';position:absolute;left:0;color:rgba(11,16,32,.4)}
+
+/* автор */
+.author{display:grid;grid-template-columns:minmax(0,.3fr) minmax(0,.7fr);
+  gap:clamp(1.8rem,3.4vw,3.4rem);align-items:center}
+.author p{font-size:clamp(.94rem,1.08vw,1rem);line-height:1.65;color:rgba(244,241,233,.8);margin:0 0 1rem}
+.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;
+  border:1px dashed rgba(244,241,233,.28);background:repeating-linear-gradient(135deg,
+  transparent 0 9px, rgba(244,241,233,.035) 9px 18px);color:rgba(244,241,233,.6);padding:1.4rem}
+.ph--portrait{aspect-ratio:4/5}
+.ph--book{margin-top:1.4rem;min-height:8rem}
+.ph__t{font-size:.9375rem;font-weight:700}
+.ph__d{font-size:.8125rem}
+
+/* портрет */
+
+
+.note-red{margin:1rem 0 0;font-size:.8125rem;color:rgba(244,241,233,.58)}
+.band:not(.band--dark):not(.band--night) .note-red{color:rgba(11,16,32,.5)}
+
+/* что внутри */
+.card{background:var(--paper);border:1px solid rgba(11,16,32,.1);padding:1.1rem;
+  transition:border-color .3s ease,transform .3s ease}
+.card:hover{border-color:rgba(72,50,255,.35);transform:translateY(-2px)}
+.card__vis{background:var(--night);padding:1rem;min-height:9rem;display:flex;
+  flex-direction:column;justify-content:center;gap:.55rem;margin-bottom:1rem}
+.card__vis--chat{background:var(--paper);border:1px solid rgba(11,16,32,.12);padding:.9rem}
+.card h3{margin:0 0 .45rem;font-size:1.0625rem;letter-spacing:-.02em}
+.card p{margin:0;font-size:.9375rem;line-height:1.5;color:rgba(11,16,32,.68)}
+.tbl{width:100%;border-collapse:collapse;font-size:.75rem;color:rgba(244,241,233,.85)}
+.tbl th{text-align:left;font-weight:700;color:rgba(244,241,233,.58);padding:.25rem .4rem;
+  border-bottom:1px solid rgba(244,241,233,.2);font-size:.8125rem}
+.tbl td{padding:.3rem .4rem;border-bottom:1px solid rgba(244,241,233,.08)}
+.tbl tr:last-child td{color:var(--paper)}
+.msg{margin:0;font-size:.8125rem;line-height:1.45;padding:.6rem .75rem;max-width:88%}
+.msg--in{background:rgba(11,16,32,.06);color:rgba(11,16,32,.8);align-self:flex-start}
+.card .msg--out{background:var(--indigo);color:var(--paper);align-self:flex-end;font-weight:500}
+.card .msg--in{color:rgba(11,16,32,.82)}
+.card__vis--audio{align-items:center;justify-content:center}
+.wave{display:flex;align-items:center;gap:3px;height:38px}
+.wave i{width:3px;background:var(--indigo);display:block}
+.wave i:nth-child(1){height:30%}.wave i:nth-child(2){height:60%}.wave i:nth-child(3){height:90%}
+.wave i:nth-child(4){height:45%}.wave i:nth-child(5){height:75%}.wave i:nth-child(6){height:100%}
+.wave i:nth-child(7){height:55%}.wave i:nth-child(8){height:85%}.wave i:nth-child(9){height:35%}
+.wave i:nth-child(10){height:65%}.wave i:nth-child(11){height:45%}.wave i:nth-child(12){height:25%}
+.audio__t{font-size:.75rem;color:rgba(244,241,233,.6)}
+.card__vis--links{justify-content:center;gap:.5rem}
+.card__vis--light{background:var(--paper);border:1px solid rgba(11,16,32,.12)}
+.lnk-btn{display:flex;align-items:center;gap:.55rem;padding:.55rem .75rem;
+  border:1px solid rgba(11,16,32,.14);color:rgba(11,16,32,.78);font-size:.8125rem;
+  background:rgba(11,16,32,.02)}
+.lnk-btn::before{content:'';width:.5rem;height:.5rem;background:var(--indigo);flex:0 0 auto}
+
+/* отзывы */
+.revs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1.2rem,2.4vw,2rem);
+  margin-top:clamp(1.6rem,3.5vh,2.4rem)}
+.rev{margin:0}
+.rev img{width:100%;display:block;border:1px solid rgba(11,16,32,.12)}
+.rev figcaption{margin-top:.7rem;font-size:.875rem;line-height:1.45;color:rgba(11,16,32,.68);
+  padding-left:.9rem;border-left:2px solid var(--indigo)}
+
+/* ссылки автора */
+.links{list-style:none;margin:1.2rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem .9rem}
+.links a{display:inline-block;padding:.5rem .9rem;border:1px solid rgba(244,241,233,.3);
+  color:var(--paper);text-decoration:none;font-size:.875rem;font-weight:600;
+  transition:background-color .2s ease,border-color .2s ease}
+.links a:hover{background:var(--indigo);border-color:var(--indigo)}
+
+/* второй уровень — отдельно от программы */
+.next-lvl{margin-top:clamp(1.6rem,3.5vh,2.4rem);padding:1.4rem 1.5rem;
+  border:1px solid rgba(11,16,32,.16);background:rgba(24,38,71,.05)}
+.next-lvl__lab{display:block;font-size:.875rem;
+  color:rgba(11,16,32,.66);font-weight:700;margin-bottom:.5rem}
+.next-lvl p{margin:0;font-size:.9375rem;line-height:1.6;color:rgba(244,241,233,.8);max-width:66ch}
+.next-lvl b{color:var(--paper)}
+
+/* цена: колонки по верху */
+
+.final__seats{font-size:clamp(1.6rem,2.6vw,2.2rem);font-weight:800;letter-spacing:-.03em;
+  color:var(--paper);margin:0 auto 1.8rem!important;font-size:clamp(1.6rem,2.6vw,2.2rem)!important}
+
+/* три пути */
+.ways{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(1.2rem,2.4vw,2.4rem);margin:clamp(1.6rem,3vh,2.4rem) 0 0;padding:0;list-style:none}
+.way{display:block;padding-top:1rem;border-top:1px solid rgba(244,241,233,.22)}
+.way__n{font-size:1.125rem;font-weight:800;color:rgba(11,16,32,.35)}
+.way h3{margin:0 0 .45rem;font-size:1.125rem;letter-spacing:-.02em}
+.way p{margin:0;font-size:.9375rem;line-height:1.55;color:rgba(11,16,32,.7);max-width:62ch}
+.way--on .way__n{color:var(--indigo)}
+.way--on h3{color:var(--indigo)}
+
+/* цена */
+.price{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:clamp(1.8rem,3.4vw,3.4rem);margin-top:clamp(1.6rem,3.5vh,2.4rem);align-items:start}
+.price__l,.price__r{padding-top:0}
+.price__r h3{margin-top:.55rem}
+.price__v{font-size:clamp(2.2rem,4vw,3.2rem);font-weight:800;letter-spacing:-.04em;margin:0 0 .6rem;
+  font-variant-numeric:tabular-nums}
+.price__d{margin:0 0 1.5rem;font-size:.9375rem;line-height:1.55;color:rgba(11,16,32,.7);max-width:36ch}
+.price__note{margin:1.1rem 0 0;font-size:.8125rem;color:rgba(11,16,32,.5)}
+.price__r h3{margin:0 0 .9rem;font-size:.9375rem;letter-spacing:.02em}
+.price__r ul{margin:0;padding:0;list-style:none;display:grid;gap:.6rem}
+.price__r li{font-size:.9375rem;line-height:1.5;padding-left:1.4rem;position:relative;
+  color:rgba(11,16,32,.78)}
+.price__r li::before{content:'';position:absolute;left:0;top:.55em;width:.55rem;height:.55rem;
+  background:var(--indigo)}
+
+/* финал */
+.final{text-align:center}
+.final h2{max-width:none;margin-bottom:1rem}
+.final p{margin:0 auto 1.8rem;max-width:52ch;font-size:1rem;line-height:1.6;
+  color:rgba(244,241,233,.78)}
+.cta--big{padding:1.15rem 2.6rem;font-size:1.0625rem}
+.final__note{margin-top:1.4rem!important;font-size:.8125rem;color:rgba(244,241,233,.6)}
+
+/* ═══ дизайнерский слой ═══ */
+
+/* полоса прочитанного — тонкая, вверху */
+.progress{position:fixed;top:0;left:0;height:2px;background:var(--indigo);z-index:30;
+  width:0;transition:width .1s linear}
+
+/* появление секций: один приём, не на каждом элементе */
+@media(prefers-reduced-motion:no-preference){
+  .rv{opacity:0;transform:translateY(14px);filter:blur(2px)}
+  .rv.in{opacity:1;transform:none;filter:none;
+    transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1),
+               filter .7s cubic-bezier(.2,.8,.2,1)}
+}
+
+/* шов между секциями — обрывок гипнограммы */
+.band + .band::before{content:'';position:absolute;left:0;right:0;top:-1px;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(11,16,32,.14) 20%,rgba(11,16,32,.14) 80%,transparent)}
+.band{position:relative;border-top:0}
+
+/* заголовки: сильнее контраст, тоньше трекинг */
+h2{letter-spacing:-.04em}
+
+
+/* цифры первого экрана: живые при появлении */
+.facts b{transition:color .4s ease}
+
+/* карточки и плитки — отклик на курсор */
+.st,.st:hover,.mod summary{transition:background-color .25s ease;margin-inline:-.6rem;padding-inline:.6rem}
+.mod summary:hover{background:rgba(244,241,233,.05)}
+.rev img{transition:transform .4s cubic-bezier(.2,.8,.2,1),border-color .3s ease}
+.rev:hover img{transform:translateY(-3px);border-color:rgba(72,50,255,.4)}
+.links a:active{transform:scale(.97)}
+
+/* цена — акцент на числе */
+.price__v{position:relative;display:inline-block}
+.price__v::after{content:'';position:absolute;left:0;right:0;bottom:.12em;height:.22em;
+  background:var(--indigo);z-index:-1}
+.price__l{position:relative;z-index:1}
+
+/* первый экран: глубина за видео */
+.col--media{position:relative}
+.col--media::before{content:'';position:absolute;inset:-12% 0 -18% 0;z-index:-1;
+  background:radial-gradient(60% 50% at 50% 45%, rgba(72,50,255,.16), transparent 70%);
+  filter:blur(24px);pointer-events:none}
+
+/* финал: гипнограмма ярче — конец пути */
+.band--night::before{opacity:.24}
+
+
+/* блок снятия «сам справлюсь» */
+.band--self{background:var(--paper);box-shadow:inset 0 0 0 100vh rgba(24,38,71,.05)}
+.self{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);
+  gap:clamp(1.6rem,3.4vw,3.4rem);align-items:start}
+.self__h{font-size:clamp(1.6rem,2.9vw,2.5rem);line-height:1.12;letter-spacing:-.045em;
+  margin:0;max-width:14ch}
+.self__body p{margin:0 0 1rem;font-size:clamp(1rem,1.2vw,1.125rem);line-height:1.6;
+  color:rgba(11,16,32,.78);max-width:62ch}
+.lead-key{margin:0 0 .9rem;font-size:clamp(1rem,1.25vw,1.1875rem);
+  line-height:1.5;color:var(--paper);opacity:.82;max-width:56ch}
+.self__key{font-weight:700;color:var(--night)!important;padding-left:1.1rem;
+  border-left:3px solid var(--indigo);margin-top:1.4rem!important}
+@media(max-width:900px){.self{grid-template-columns:1fr;gap:1.2rem}}
+
+.term{margin:1.1rem 0 0;padding:0 0 0 1.1rem;
+  border-left:2px solid rgba(11,16,32,.2);font-size:clamp(.95rem,1.1vw,1.0625rem);
+  line-height:1.6;max-width:62ch}
+
+.self__list{margin:.2rem 0 0;padding:0;list-style:none;display:grid;gap:.5rem}
+.self__list li{position:relative;padding-left:1.2rem;font-size:clamp(.98rem,1.15vw,1.0625rem);
+  line-height:1.5;color:rgba(11,16,32,.8)}
+.self__list li::before{content:'';position:absolute;left:0;top:.62em;width:.45rem;height:1px;
+  background:var(--indigo)}
+
+.au-facts{list-style:none;margin:0 0 1.4rem;padding:0;display:grid;
+  grid-template-columns:repeat(3,auto);justify-content:start;gap:clamp(1.4rem,3vw,2.6rem)}
+.au-facts li{display:flex;flex-direction:column;gap:.25rem}
+.au-facts b{font-size:clamp(1.5rem,2.2vw,2rem);font-weight:800;letter-spacing:-.03em;
+  line-height:1;color:var(--night);font-variant-numeric:tabular-nums}
+.au-facts span{font-size:.8125rem;line-height:1.3;color:rgba(244,241,233,.7)}
+@media(max-width:800px){
+  .facts{grid-template-columns:repeat(2,1fr);gap:1.1rem}
+  .facts span{white-space:normal}
+}
+@media(max-width:560px){.au-facts{grid-template-columns:1fr;gap:.9rem}}
+
+.term--floor{border-left-color:var(--indigo);margin-top:.9rem}
+
+@media(max-width:760px){  }
+.nw{white-space:nowrap}
+
+.hero-film{position:relative;aspect-ratio:16/9;border:1px solid var(--rule);
+  display:grid;place-items:end start;padding:clamp(.8rem,1.6vw,1.2rem);overflow:hidden;
+  background:#0B1020 url(./assets/video-poster.jpg) center/cover no-repeat}
+.hero-film::after{content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(11,16,32,0) 50%,rgba(11,16,32,.6))}
+.hero-film[data-on]::after{display:none}
+.hero-film .play__btn{width:clamp(56px,6vw,72px);height:clamp(56px,6vw,72px);position:relative;z-index:1}
+.hero-film .play__btn svg{width:24px;height:24px;margin-left:4px}
+.hero-film__note{margin:.9rem 0 0;text-align:center;font-size:.9375rem;line-height:1.4;
+  color:rgba(11,16,32,.62)}
+.hero-film__cap{position:absolute;right:.8rem;bottom:.8rem;z-index:1;padding:.2rem .5rem;
+  background:rgba(11,16,32,.8);color:var(--paper);font-size:.8125rem;font-weight:700}
+.hero-film{aspect-ratio:16/9}
+/* ── цвет текста под фон секции: блоки свёрстаны под свой фон ── */
+/* 6 · инструменты на тёмном: мокапы остаются светлыми карточками */
+.band--dark .card h3{color:var(--night)}
+/* 8 · автор переехал на светлое */
+.band--paper .author,
+.band--paper .au-facts b,
+.band--paper .au-facts span,
+.band--paper .author p,
+.band--paper .links a{color:var(--night)}
+.band--paper .au-facts span{color:rgba(11,16,32,.62)}
+.band--paper .links a{border-bottom-color:rgba(11,16,32,.28)}
+/* 11 · три пути на тёмном */
+.band--dark .way,
+.band--dark .way h3,
+.band--dark .way p{color:var(--paper)}
+.band--dark .way__n{color:rgba(244,241,233,.58)}
+/* 13 · цена на тёмном */
+.band--dark .price, .band--night .price,
+.band--dark .price__v, .band--night .price__v,
+.band--dark .price__d, .band--night .price__d,
+.band--dark .price__r li, .band--night .price__r li{color:var(--paper)}
+.band--dark .price__note, .band--night .price__note{color:rgba(244,241,233,.62)}
+
+.gu{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.6rem,3vw,3rem);
+  margin-top:clamp(1.6rem,3vh,2.4rem);align-items:start}
+.notfit{margin-top:clamp(2rem,4vh,3rem);padding-top:clamp(1.4rem,3vh,2rem);
+  border-top:1px solid rgba(11,16,32,.14)}
+.notfit h3{margin:0 0 .8rem;font-size:clamp(1.0625rem,1.35vw,1.25rem);letter-spacing:-.02em}
+.notfit ul{margin:0;padding:0;list-style:none;display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem 2rem}
+.notfit li{position:relative;padding-left:1.1rem;font-size:.9375rem;line-height:1.5;
+  color:rgba(11,16,32,.7)}
+.notfit li::before{content:'';position:absolute;left:0;top:.62em;width:6px;height:1px;
+  background:rgba(11,16,32,.42)}
+@media(max-width:760px){.notfit ul{grid-template-columns:1fr}}
+
+.self__mid{margin:1.3rem 0 .6rem!important;font-weight:700;color:var(--night)!important}
+@media(max-width:760px){.ways{grid-template-columns:1fr}}
+
+@media(max-width:760px){}
+
+.rev{margin:0;display:grid;grid-template-rows:1fr auto;gap:.7rem}
+.rev figcaption{padding-left:.9rem;border-left:3px solid var(--indigo);
+  font-size:.9375rem;line-height:1.4;font-weight:600;color:var(--night)}
+
+.gu__col h3, .gu__no h3{margin:0 0 .8rem;font-size:.9375rem;letter-spacing:-.01em;
+  font-weight:700;color:var(--night)}
+.gu__col{padding:1rem 0 0;border-top:1px solid rgba(11,16,32,.16)}
+.gu__col .gu__yes{padding:0;border-top:0}
+
+.res{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(1.2rem,2.4vw,2.6rem);margin:clamp(1.4rem,3vh,2.2rem) 0 0;padding:0;list-style:none}
+.res li{padding-top:1rem;border-top:1px solid rgba(11,16,32,.16)}
+.res__n{display:block;font-size:.8125rem;font-weight:700;color:rgba(11,16,32,.62);
+  margin-bottom:.5rem;font-variant-numeric:tabular-nums}
+.res h3{margin:0 0 .5rem;font-size:clamp(1.0625rem,1.35vw,1.25rem);letter-spacing:-.025em}
+.res p{margin:0;font-size:.9375rem;line-height:1.5;color:rgba(11,16,32,.7)}
+@media(max-width:760px){.res{grid-template-columns:1fr;gap:1rem}}
+
+@media(max-width:760px){
+  .ctor__tiles{grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem}
+  .ctor__side{grid-template-columns:1fr;gap:1.1rem}
+  .ctor__nav{justify-self:start}
+  .tile{min-height:4.6rem;padding:.7rem .75rem}
+}
+@media(max-width:400px){
+  .ctor__tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  }
+
+@media(max-width:400px){
+  .bar .wrap{gap:.8rem}
+  .cta--s{padding:.5rem .8rem;font-size:.8125rem;white-space:nowrap}
+  .brand{font-size:.9375rem}
+}
+
+@media(max-width:520px){
+  .ln{display:inline;white-space:normal}
+  .ln::after{content:' '}
+}
+
+.mbar{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:.35rem;
+  margin:clamp(1.4rem,3vh,2rem) 0 clamp(1.2rem,2.6vh,1.8rem);padding:0;list-style:none}
+.mbar li{padding-top:.55rem;border-top:2px solid rgba(244,241,233,.22)}
+.mbar li:first-child{border-top-color:var(--indigo)}
+.mbar b{display:block;font-size:.75rem;font-weight:700;color:rgba(244,241,233,.58);
+  font-variant-numeric:tabular-nums;margin-bottom:.15rem}
+.mbar span{display:block;font-size:.75rem;line-height:1.25;color:rgba(244,241,233,.72)}
+@media(max-width:760px){.mbar{grid-template-columns:repeat(4,minmax(0,1fr));gap:.5rem .4rem}}
+@media(max-width:400px){.mbar{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+.h2--prog{display:grid;gap:.15rem;justify-items:start}
+.prog-lab{display:inline-block;background:var(--indigo);color:var(--paper);
+  padding:.08em .38em .14em;margin-bottom:.25rem;width:fit-content}
+.prog-sub{display:block}
+.ways__cta{margin:clamp(1.8rem,4vh,2.6rem) 0 0;text-align:center}
+.mbar li.is-on{border-top-color:var(--indigo)}
+.mbar li.is-on b,.mbar li.is-on span{color:var(--paper)}
+
+@media(max-width:760px){
+    }
+@media(max-width:440px){  }
+
+/* портрет — оригинал без фона, целиком */
+.portrait{background:var(--depth);display:flex;align-items:flex-end;justify-content:center;
+  aspect-ratio:3/4;overflow:hidden}
+.portrait img{width:100%;height:100%;object-fit:contain;object-position:bottom center;display:block}
+
+
+
+.band--dark .part,.band--night .part{color:var(--paper)}
+.part{margin:0 0 .35rem;font-size:1.0625rem;font-weight:800;color:var(--indigo);
+  font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.wk-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);
+  gap:clamp(1.6rem,3.4vw,3.4rem);align-items:center;margin-top:clamp(1.4rem,3vh,2.2rem)}
+.wk-list{margin:0;padding:0;list-style:none;display:grid;gap:0}
+.wk-list li{padding:.85rem 0;border-top:1px solid rgba(11,16,32,.14);
+  font-size:clamp(.98rem,1.2vw,1.0625rem);line-height:1.5;color:rgba(11,16,32,.78)}
+.wk-list li:last-child{border-bottom:1px solid rgba(11,16,32,.14)}
+.wk-list b{display:block;color:var(--night);font-weight:700;margin-bottom:.15rem}
+.wk-pic{margin:0}
+.wk-pic svg{display:block;width:100%;max-width:260px;height:auto;margin-inline:auto}
+@media(max-width:760px){.wk-grid{grid-template-columns:1fr;gap:1.4rem}
+  .wk-pic svg{max-width:200px}}
+
+@media(max-width:760px){}
+
+.claim{padding:clamp(2.4rem,5.5vh,3.6rem) 0}
+.claim__t{margin:0 auto;font-size:clamp(1.125rem,1.9vw,1.5rem);line-height:1.34;
+  letter-spacing:-.025em;font-weight:600;max-width:46ch;text-align:center}
+.claim__hi{color:var(--indigo);display:block;font-weight:700}
+.claim__sub{display:block;margin-top:.2em;font-size:1em;font-weight:500;
+  line-height:1.34;color:rgba(11,16,32,.7)}
+.lead-key span{display:block;color:rgba(244,241,233,.6);font-size:.86em;
+  font-weight:600;margin-bottom:.15rem}
+.lead-key b{color:var(--paper);font-weight:800;
+  background-image:linear-gradient(var(--indigo),var(--indigo));
+  background-size:100% .18em;background-position:0 92%;background-repeat:no-repeat;
+  padding-bottom:.06em}
+.wk-grid{align-items:center}
+.wk-pic{display:grid;place-items:center}
+
+.revs-more{margin:clamp(1.2rem,2.6vh,1.8rem) 0 0}
+.revs-more a{font-size:.9375rem;font-weight:600;color:var(--night);text-decoration:none;
+  border-bottom:2px solid var(--indigo);padding-bottom:.1rem}
+
+/* открытый разбор */
+.watch{position:relative;aspect-ratio:16/9;display:grid;place-items:center;
+  text-decoration:none;border:1px solid rgba(11,16,32,.12);overflow:hidden;
+  background:var(--depth);transition:border-color .3s ease}
+.watch__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.watch::after{content:'';position:absolute;inset:0;background:rgba(11,16,32,.58)}
+.watch__c{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;
+  gap:.7rem}
+.watch__t{font-size:.875rem;font-weight:600;color:var(--paper);text-align:center}
+.watch:hover{border-color:var(--indigo)}
+.watch__play{width:54px;height:54px;background:var(--indigo);display:grid;place-items:center}
+.watch__play svg{width:16px;height:16px;margin-left:3px}
+.watch__t{font-size:.875rem;font-weight:600;color:var(--paper);text-align:center}
+
+/* оговорки в гарантиях — заметнее */
+.term{margin:1.1rem 0 0;padding:.9rem 0 .9rem 1.2rem;
+  border-left:4px solid var(--indigo);font-size:clamp(1rem,1.2vw,1.125rem);
+  line-height:1.55;max-width:62ch;color:var(--night)}
+.term b{font-weight:800}
+.term--floor{border-left-color:var(--night);margin-top:.6rem}
+
+/* «курс не подойдёт» — отбит рамкой */
+.notfit{margin-top:clamp(2rem,4vh,3rem);padding:clamp(1.2rem,2.6vh,1.6rem) clamp(1.2rem,2.4vw,1.6rem);
+  border:1px solid rgba(11,16,32,.2);border-top:3px solid var(--night)}
+
+.kit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1.2rem,2.4vw,2rem);
+  margin-top:clamp(1.6rem,3.5vh,2.4rem)}
+
+.hero-film{cursor:pointer}
+.hero-film .play__btn{border:0;cursor:pointer;padding:0}
+.hero-film__frame{position:absolute;inset:0;width:100%;height:100%;border:0}
+.hero-film:hover .play__btn{transform:scale(1.06)}
+.play__btn{transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+
+@media(max-width:920px){
+  .learn,.week,.three,.gu,.author,.price,.kit,.revs{grid-template-columns:minmax(0,1fr)}
+  .tbl{font-size:.6875rem}
+  .tbl th,.tbl td{padding:.25rem .3rem}
+  .learn{grid-auto-flow:row;grid-template-rows:none}
+  .ways .way{grid-template-columns:2.4rem minmax(0,1fr)}
+}
+
+@media(max-width:920px){
+  .ctor{grid-template-columns:1fr;gap:1.8rem}
+  .ctor__pages{min-height:0}
+  .grid{grid-template-columns:1fr;gap:1.6rem;align-items:start}
+  .nav{display:none}
+  .hero{min-height:0;padding-block:calc(var(--bar) + 1.8rem) 2.6rem}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="bar">
+  <div class="wrap">
+    <span class="brand">Лаборатория&nbsp;<i>сознания</i></span>
+    <nav class="nav">
+      <a href="#program">Программа</a><a href="#week">Как&nbsp;проходит</a><a href="#price">Цена</a>
+    </nav>
+    <a class="cta cta--s" href="https://t.me/mikebaryshnikov?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%2C%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D0%BE%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%21" target="_blank" rel="noopener">Записаться</a>
+  </div>
+</header>
+
+<!-- 1. ПЕРВЫЙ ЭКРАН -->
+<section class="hero">
+  <div class="wrap grid">
+
+    <div class="col">
+      <h1><span class="ln">За&nbsp;два месяца пройдите путь</span>
+        <span class="ln">от&nbsp;первых попыток</span>
+        <span class="ln">до&nbsp;личной&nbsp;системной&nbsp;практики</span>
+        <span class="ln"><u>осознанных&nbsp;снов</u></span></h1>
+
+      <p class="sub"><span class="ln">И&nbsp;научитесь использовать этот инструмент</span>
+        <span class="ln">для&nbsp;улучшения жизни</span></p>
+
+      <div class="act">
+        <a class="cta" href="https://t.me/mikebaryshnikov?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%2C%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D0%BE%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%21" target="_blank" rel="noopener">Записаться на&nbsp;курс</a>
+        <a class="link" href="#program">Смотреть программу</a>
+      </div>
+
+      <p class="hero-price"><b>29&nbsp;990&nbsp;₽</b> за&nbsp;курс · старт 17&nbsp;октября · 10&nbsp;мест</p>
+      <p class="without">Без&nbsp;эзотерики, нарушения сна и&nbsp;бесконечного перебора&nbsp;техник</p>
+
+    </div>
+
+    <div class="col col--media">
+      <div class="hero-film" id="film" data-kid="uCU1MSD4Foa9GE5j8rjoex">
+        <button class="play__btn" type="button" aria-label="Смотреть видео">
+          <svg viewBox="0 0 24 24" fill="#F4F1E9"><path d="M8 5v14l11-7z"/></svg></button>
+        <span class="hero-film__cap">6&nbsp;мин</span>
+      </div>
+      <p class="hero-film__note">Как&nbsp;я сам шёл к&nbsp;регулярной практике, что&nbsp;понял по&nbsp;дороге<br>и&nbsp;почему собрал этот&nbsp;курс</p>
+    </div>
+  </div>
+
+    <div class="wrap facts-wrap">
+      <ul class="facts">
+        <li><b>31</b><span>урок в&nbsp;8&nbsp;модулях</span></li>
+        <li><b>2</b><span>занятия в&nbsp;неделю по&nbsp;два урока</span></li>
+        <li><b>8</b><span>живых разборов</span></li>
+        <li><b>2</b><span>месяца работы и&nbsp;месяц поддержки</span></li>
+      </ul>
+    </div>
+</section>
+
+<!-- 2. СНЯТИЕ «САМ СПРАВЛЮСЬ» -->
+
+<section class="band band--paper znak">
+  <div class="wrap">
+    <h2>Знакомо?</h2>
+    <ul class="znak__list">
+      <li>Хочу разобраться в&nbsp;осознанных снах, но&nbsp;не&nbsp;понимаю, с&nbsp;чего&nbsp;начать</li>
+      <li>Интересно, как&nbsp;это&nbsp;устроено на&nbsp;самом деле, без&nbsp;мистики</li>
+      <li>Осознанный сон получился один&nbsp;раз, и&nbsp;больше не&nbsp;повторяется</li>
+      <li>Пробую технику за&nbsp;техникой и&nbsp;не&nbsp;понимаю, что&nbsp;делаю не&nbsp;так</li>
+      <li>Просыпаюсь ночью и&nbsp;забываю про&nbsp;практику или&nbsp;засыпаю прямо на&nbsp;технике</li>
+      <li>В&nbsp;книге одно, в&nbsp;ролике другое, и&nbsp;непонятно, кому&nbsp;верить</li>
+    </ul>
+    <p class="znak__end">У&nbsp;каждой из&nbsp;этих ситуаций есть причина. На&nbsp;курсе мы&nbsp;начинаем с&nbsp;того места, где&nbsp;вы&nbsp;сейчас: если&nbsp;опыта нет, объясняем с&nbsp;нуля, как&nbsp;всё устроено, а&nbsp;если&nbsp;попытки уже&nbsp;были, находим, на&nbsp;каком этапе они&nbsp;остановились.</p>
+  </div>
+</section>
+
+<section class="band band--paper claim">
+  <div class="wrap">
+    <p class="claim__t"><span class="claim__hi">Осознанный сон доступен каждому</span>
+      <span class="claim__sub">На&nbsp;курсе разбираем, как&nbsp;попадать туда по&nbsp;своему желанию</span></p>
+  </div>
+</section>
+
+
+
+<section class="band js-rv band--dark">
+  <div class="wrap">
+    <p class="lead-key"><span>Наша ключевая задача</span>
+      сформировать вашу <b>личную систему практики</b> осознанных&nbsp;снов</p>
+    <h2>Из&nbsp;чего она&nbsp;собирается</h2>
+
+    <div class="ctor" id="ctor">
+      <div class="ctor__tiles">
+        <button class="tile is-now" data-i="1" type="button">
+          <span class="tile__n">01</span><span class="tile__t">Точка А</span></button>
+        <button class="tile" data-i="2" type="button">
+          <span class="tile__n">02</span><span class="tile__t">Экология сна</span></button>
+        <button class="tile" data-i="3" type="button">
+          <span class="tile__n">03</span><span class="tile__t">Выбор техники</span></button>
+        <button class="tile" data-i="4" type="button">
+          <span class="tile__n">04</span><span class="tile__t">Настройка<br>на&nbsp;ночь</span></button>
+        <button class="tile" data-i="5" type="button">
+          <span class="tile__n">05</span><span class="tile__t">Внутри<br>осознанного сна</span></button>
+        <button class="tile tile--key" data-i="6" type="button">
+          <span class="tile__n">06</span><span class="tile__t">Разбор<br>попыток</span></button>
+      </div>
+
+      <div class="ctor__side">
+        <div class="ctor__pages">
+          <article class="page" data-i="1"><h3>Точка&nbsp;А</h3>
+            <p>Первое, с&nbsp;чего стоит начать, — понять, на&nbsp;каком уровне вы&nbsp;сейчас. В&nbsp;начале курса проходим разбор: что&nbsp;уже знаете, что&nbsp;пробовали, что&nbsp;получалось, сколько спите и&nbsp;как&nbsp;просыпаетесь. Именно отсюда видны ваши личные особенности, а&nbsp;от&nbsp;них зависит, какой путь окажется вашим. Если&nbsp;опыта пока нет совсем — разбираем всё с&nbsp;нуля, курс рассчитан и&nbsp;на&nbsp;такой&nbsp;старт.</p></article>
+          <article class="page" data-i="2" hidden><h3>Экология&nbsp;сна</h3>
+            <p>Без&nbsp;качественного сна попасть в&nbsp;осознанный сон в&nbsp;разы сложнее, поэтому отдельно занимаемся режимом: сколько вам нужно спать, во&nbsp;сколько ложиться и&nbsp;вставать, что&nbsp;мешает засыпать и&nbsp;почему пробуждение по&nbsp;будильнику работает хуже естественного. И&nbsp;учимся чувствовать переходное состояние между сном и&nbsp;явью — именно из&nbsp;него и&nbsp;получается выйти в&nbsp;осознанный&nbsp;сон.</p></article>
+          <article class="page" data-i="3" hidden><h3>Выбор&nbsp;техники</h3>
+            <p>Универсальной техники не&nbsp;существует: одна и&nbsp;та&nbsp;же&nbsp;работает у&nbsp;одних и&nbsp;не&nbsp;работает у&nbsp;других. Причина у&nbsp;каждого своя, и&nbsp;она почти никогда не&nbsp;в&nbsp;самой технике. Поэтому сначала разбираемся, от&nbsp;чего на&nbsp;самом деле зависит результат — как&nbsp;влияют прошлый опыт, отношение к&nbsp;практике и&nbsp;мотивация. И&nbsp;только потом выбираем метод, который подходит именно&nbsp;вам.</p></article>
+          <article class="page" data-i="4" hidden><h3>Настройка на&nbsp;ночь</h3>
+            <p>Учимся формировать намерение перед сном так, чтобы&nbsp;успешный выход был подготовлен заранее. Разбираем, что&nbsp;делать на&nbsp;пробуждении, что — если не&nbsp;получилось, что — когда получилось, как&nbsp;повторить удачный опыт и&nbsp;как&nbsp;не&nbsp;дать повториться неудачному. Отдельно работаем с&nbsp;двумя вещами, которые ломают больше всего попыток: с&nbsp;неверием в&nbsp;то, что&nbsp;это&nbsp;возможно именно у&nbsp;вас, и&nbsp;с&nbsp;попыткой добиться результата&nbsp;напором.</p></article>
+          <article class="page" data-i="5" hidden><h3>Внутри осознанного&nbsp;сна</h3>
+            <p>Опыт может длиться несколько секунд, поэтому важно понимать, как&nbsp;его&nbsp;продлить. Разбираем, как&nbsp;сделать картинку реалистичной и&nbsp;устойчивой, как&nbsp;перемещаться туда, куда задумали, и&nbsp;успевать выполнить свою цель. И&nbsp;как&nbsp;выбрать цель, ради которой действительно хочется&nbsp;практиковать.</p></article>
+          <article class="page" data-i="6" hidden><h3>Разбор&nbsp;попыток</h3>
+            <p>Часто кажется, что&nbsp;делаешь всё правильно, а&nbsp;результата нет — и&nbsp;человек решает, что&nbsp;ему просто не&nbsp;дано. Почти всегда причина есть, но&nbsp;изнутри её&nbsp;не&nbsp;видно: свои ошибки человек не&nbsp;замечает, а&nbsp;в&nbsp;ответ на&nbsp;неудачу тянет сделать шаг, который только усугубит положение. Поэтому важно получать обратную связь на&nbsp;свои попытки, корректировать их&nbsp;и&nbsp;параллельно учиться разбирать самостоятельно — этот навык остаётся с&nbsp;вами и&nbsp;после&nbsp;курса.</p></article>
+        </div>
+        <div class="ctor__nav">
+          <button class="arw arw--prev" type="button" aria-label="Назад">&#8249;</button>
+          <span class="ctor__count"><b>01</b> / 06</span>
+          <button class="arw arw--next" type="button" aria-label="Вперёд">&#8250;</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<section class="band band--paper" id="week">
+  <div class="wrap">
+    <p class="part">01</p>
+    <h2>Как&nbsp;будем работать на&nbsp;курсе</h2>
+    <div class="wk-grid">
+      <div class="wk-txt">
+        <ul class="wk-list">
+          <li><b>Вторник и&nbsp;суббота</b>выходят два новых урока — смотрите когда&nbsp;удобно</li>
+          <li><b>Ночью</b>делаете попытку. Дни выбираете&nbsp;сами</li>
+          <li><b>Утром</b>короткая запись о&nbsp;том, что&nbsp;было</li>
+          <li><b>Раз в&nbsp;неделю</b>встречаемся на&nbsp;разборе в&nbsp;Zoom</li>
+        </ul>
+      </div>
+      <figure class="wk-pic">
+        <div class="cal" role="img" aria-label="Календарь на&nbsp;октябрь 2026: старт потока 17&nbsp;октября, новые уроки по&nbsp;вторникам и&nbsp;субботам">
+          <div class="cal__head">Октябрь 2026</div>
+          <div class="cal__grid"><span class="cal__wd">Пн</span><span class="cal__wd">Вт</span><span class="cal__wd">Ср</span><span class="cal__wd">Чт</span><span class="cal__wd">Пт</span><span class="cal__wd">Сб</span><span class="cal__wd">Вс</span><span class="cal__d"></span><span class="cal__d"></span><span class="cal__d"></span><span class="cal__d cal__d--off">1</span><span class="cal__d cal__d--off">2</span><span class="cal__d cal__d--off">3</span><span class="cal__d cal__d--off">4</span><span class="cal__d cal__d--off">5</span><span class="cal__d cal__d--off">6</span><span class="cal__d cal__d--off">7</span><span class="cal__d cal__d--off">8</span><span class="cal__d cal__d--off">9</span><span class="cal__d cal__d--off">10</span><span class="cal__d cal__d--off">11</span><span class="cal__d cal__d--off">12</span><span class="cal__d cal__d--off">13</span><span class="cal__d cal__d--off">14</span><span class="cal__d cal__d--off">15</span><span class="cal__d cal__d--off">16</span><span class="cal__d cal__d--start">17</span><span class="cal__d">18</span><span class="cal__d">19</span><span class="cal__d cal__d--lesson">20</span><span class="cal__d">21</span><span class="cal__d">22</span><span class="cal__d">23</span><span class="cal__d cal__d--lesson">24</span><span class="cal__d">25</span><span class="cal__d">26</span><span class="cal__d cal__d--lesson">27</span><span class="cal__d">28</span><span class="cal__d">29</span><span class="cal__d">30</span><span class="cal__d cal__d--lesson">31</span></div>
+        </div>
+        <figcaption class="cal__legend"><span><i class="cal__key cal__key--start"></i>старт потока</span><span><i class="cal__key cal__key--lesson"></i>новые уроки</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="band band--dark" id="program">
+  <div class="wrap">
+    <p class="part">02</p>
+    <h2 class="h2--prog"><span class="prog-lab">Программа:</span><span class="prog-sub">8&nbsp;модулей, 31&nbsp;урок</span></h2>
+    <p class="band__lede band__lede--dark">Каждый следующий инструмент появляется тогда,<br>когда вы&nbsp;уже готовы применить его&nbsp;в&nbsp;своих&nbsp;попытках</p>
+    <ol class="mbar" aria-hidden="true">
+      <li><b>01</b><span>Старт</span></li>
+      <li><b>02</b><span>Сон</span></li>
+      <li><b>03</b><span>Техники</span></li>
+      <li><b>04</b><span>Пробуждение</span></li>
+      <li><b>05</b><span>Удержание</span></li>
+      <li><b>06</b><span>Управление</span></li>
+      <li><b>07</b><span>Намерение</span></li>
+      <li><b>08</b><span>Применение</span></li>
+    </ol>
+    <div class="mods">
+      <details class="mod" open>
+        <summary><span class="mod__n">01</span><span class="mod__b"><span class="mod__t">Моя стартовая&nbsp;точка</span><span class="mod__r"><b>После модуля:</b> знаете, с&nbsp;чего стартуете: как&nbsp;спите, сколько помните снов и&nbsp;какая цель у&nbsp;первой&nbsp;попытки.</span></span></summary>
+        <ul><li>Что&nbsp;такое осознанный сон и&nbsp;что&nbsp;в&nbsp;нём&nbsp;возможно</li><li>Личная диагностика: качество сна, память сновидений, прошлый опыт и&nbsp;трудности, с&nbsp;которыми уже&nbsp;сталкивались</li><li>Зачем это&nbsp;вам — одна понятная цель на&nbsp;первую&nbsp;попытку</li><li>Безопасные границы: в&nbsp;каких состояниях занятия лучше&nbsp;отложить</li></ul>
+      </details>
+      <details class="mod">
+        <summary><span class="mod__n">02</span><span class="mod__b"><span class="mod__t">Сон как&nbsp;основа&nbsp;результата</span><span class="mod__r"><b>После модуля:</b> понимаете, в&nbsp;какое время ночи пробовать именно вам, и&nbsp;умеете прерывать сон, не&nbsp;теряя&nbsp;его.</span></span></summary>
+        <ul><li>В&nbsp;какое время ночи практиковать именно&nbsp;вам</li><li>Как&nbsp;правильно делать прерывание сна и&nbsp;не&nbsp;терять при&nbsp;этом&nbsp;сон</li><li>Естественные пробуждения: как&nbsp;их&nbsp;замечать и&nbsp;использовать</li><li>Как&nbsp;развивать память&nbsp;сновидений</li></ul>
+      </details>
+      <details class="mod">
+        <summary><span class="mod__n">03</span><span class="mod__b"><span class="mod__t">Первый контролируемый&nbsp;вход</span><span class="mod__r"><b>После модуля:</b> у&nbsp;вас есть две-три техники под&nbsp;себя и&nbsp;порядок действий&nbsp;на&nbsp;пробуждении.</span></span></summary>
+        <ul><li>Разбор ключевых методов и&nbsp;выбор того, который подойдёт именно&nbsp;вам</li><li>Конкретный алгоритм попытки на&nbsp;пробуждении для&nbsp;каждого&nbsp;метода</li><li>Две-три техники, которые вы&nbsp;понимаете и&nbsp;можете&nbsp;проверить</li><li>Как&nbsp;понять, что&nbsp;техника сработала, и&nbsp;что&nbsp;делать в&nbsp;этот&nbsp;момент</li></ul>
+      </details>
+      <details class="mod">
+        <summary><span class="mod__n">04</span><span class="mod__b"><span class="mod__t">Первые действия внутри осознанного&nbsp;сна</span><span class="mod__r"><b>После модуля:</b> знаете, что&nbsp;делать в&nbsp;первые секунды осознанного сна и&nbsp;как&nbsp;вернуться, если&nbsp;опыт закончился раньше&nbsp;времени.</span></span></summary>
+        <ul><li>Что&nbsp;делать в&nbsp;первые секунды&nbsp;опыта</li><li>Как&nbsp;сделать опыт ярче, устойчивее, реалистичнее и&nbsp;продолжительнее</li><li>Три причины, по&nbsp;которым опыт заканчивается раньше&nbsp;времени</li><li>Повторный&nbsp;выход</li></ul>
+      </details>
+      <details class="mod">
+        <summary><span class="mod__n">05</span><span class="mod__b"><span class="mod__t">Управление пространством&nbsp;сна</span><span class="mod__r"><b>После модуля:</b> умеете находить во&nbsp;сне нужных людей и&nbsp;предметы, перемещаться туда, куда&nbsp;задумали.</span></span></summary>
+        <ul><li>Как&nbsp;находить предметы и&nbsp;людей</li><li>Как&nbsp;перемещаться туда, куда&nbsp;задумали</li><li>Как&nbsp;прокачивать навыки взаимодействия с&nbsp;пространством</li><li>Основной и&nbsp;запасной план на&nbsp;попытку</li></ul>
+      </details>
+      <details class="mod">
+        <summary><span class="mod__n">06</span><span class="mod__b"><span class="mod__t">От&nbsp;случайных опытов к&nbsp;контролируемому&nbsp;результату</span><span class="mod__r"><b>После модуля:</b> по&nbsp;своей статистике видите, где именно затык, и&nbsp;понимаете, от&nbsp;чего зависит успех&nbsp;попытки.</span></span></summary>
+        <ul><li>Законы фазы и&nbsp;принципы фазы быстрого сна: от&nbsp;чего результат зависит на&nbsp;самом&nbsp;деле</li><li>Статистика практики: объективная картина вместо ощущений и&nbsp;поиск того, где именно&nbsp;затык</li><li>Прокрутки: как&nbsp;готовить сценарий&nbsp;заранее</li><li>Чем поддерживать мотивацию, когда силы воли уже не&nbsp;хватает</li></ul>
+      </details>
+      <details class="mod">
+        <summary><span class="mod__n">07</span><span class="mod__b"><span class="mod__t">Намерение и&nbsp;подготовка&nbsp;ночи</span><span class="mod__r"><b>После модуля:</b> готовите практику по&nbsp;своему порядку действий и&nbsp;заранее продумываете, что&nbsp;делать при&nbsp;неудачном&nbsp;сценарии.</span></span></summary>
+        <ul><li>Почему одного желания&nbsp;недостаточно</li><li>Подготовка к&nbsp;неудачным сценариям и&nbsp;перевод их&nbsp;в&nbsp;нужный</li><li>Построение намерения с&nbsp;учётом вашего прошлого&nbsp;опыта</li><li>Свой порядок действий на&nbsp;практическую&nbsp;ночь</li></ul>
+      </details>
+      <details class="mod">
+        <summary><span class="mod__n">08</span><span class="mod__b"><span class="mod__t">Первое&nbsp;применение</span><span class="mod__r"><b>После модуля:</b> умеете ставить в&nbsp;осознанном сне свою задачу, в&nbsp;том числе психологическую, и&nbsp;переносить опыт в&nbsp;обычную&nbsp;жизнь.</span></span></summary>
+        <ul><li>Что&nbsp;можно делать в&nbsp;осознанном сне, в&nbsp;том числе с&nbsp;психологическими&nbsp;задачами</li><li>Как&nbsp;переносить полученный опыт в&nbsp;обычную&nbsp;жизнь</li><li>Итоговая практическая&nbsp;работа</li></ul>
+      </details>
+    </div>
+    <div class="lvl2">
+      <span class="lvl2__lab">Второй уровень</span>
+      <h3>Мастерство</h3>
+      <p>Выход в&nbsp;осознанный сон без&nbsp;техник, длительные и&nbsp;полностью управляемые опыты, сложные задачи внутри, перенос результата в&nbsp;жизнь и&nbsp;собственные эксперименты. Отдельная программа для&nbsp;тех, кто готов пойти дальше и&nbsp;получить от&nbsp;практики&nbsp;больше.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="band band--dark">
+  <div class="wrap">
+    <p class="part">03</p>
+    <h2>Что&nbsp;будет помимо&nbsp;уроков</h2>
+    <p class="band__lede">Знать теорию недостаточно — важно уметь с&nbsp;ней работать. Эти&nbsp;инструменты помогают погрузиться в&nbsp;тему и&nbsp;собрать полное&nbsp;понимание.</p>
+    <div class="kit">
+      <article class="card">
+        <div class="card__vis">
+          <table class="tbl"><thead><tr><th>Ночь</th><th>Время</th><th>Техника</th><th>Что&nbsp;вышло</th></tr></thead>
+          <tbody>
+            <tr><td>12.09</td><td>05:40</td><td>вращение</td><td>поздно вспомнил</td></tr>
+            <tr><td>14.09</td><td>04:10</td><td>вслушивание</td><td>пошевелился</td></tr>
+            <tr><td>15.09</td><td>05:55</td><td>вслушивание</td><td>образы, получилось встать</td></tr>
+            <tr><td>17.09</td><td>06:20</td><td>вслушивание</td><td>цель выполнена</td></tr>
+          </tbody></table>
+        </div>
+        <h3>Таблица&nbsp;практики</h3>
+        <p>Вы&nbsp;записываете, что&nbsp;реально происходило в&nbsp;попытке, и&nbsp;собираете объективную статистику. Через две недели, опираясь на&nbsp;неё, можно строить точные гипотезы: что&nbsp;у&nbsp;вас работает, что&nbsp;нет и&nbsp;что&nbsp;стоит&nbsp;исправить.</p>
+      </article>
+      <article class="card">
+        <div class="card__vis card__vis--chat">
+          <p class="msg msg--in">Проснулся сам, не&nbsp;шевелился. Секунд двадцать слушал шум — он&nbsp;стал громче,
+            появились образы. Встал легко, дальше&nbsp;растерялся.</p>
+          <p class="msg msg--out">Всё сработало, остановились на&nbsp;цели. На&nbsp;следующую ночь — одна задача,
+            записанная с&nbsp;вечера. Проговорите её&nbsp;перед&nbsp;сном три&nbsp;раза.</p>
+        </div>
+        <h3>Ответ на&nbsp;вашу&nbsp;запись</h3>
+        <p>Короткий отчёт в&nbsp;чат — и&nbsp;разбор в&nbsp;ответ. За&nbsp;неделю успеваете сделать несколько попыток, уже с&nbsp;учётом&nbsp;рекомендаций.</p>
+      </article>
+      <article class="card">
+        <div class="card__vis card__vis--audio">
+          <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <span class="audio__t">Настройка перед сном · 6:20</span>
+        </div>
+        <h3>Аудио-настройки и&nbsp;отработка&nbsp;техник</h3>
+        <p>Включаете перед сном, чтобы&nbsp;не&nbsp;держать инструкцию в&nbsp;голове.</p>
+      </article>
+      <article class="card">
+        <a class="card__vis watch" href="https://kinescope.io/3SZL8zRXhk2i9FDYuppNMa"
+           target="_blank" rel="noopener">
+          <img class="watch__img" src="./assets/zoom.jpg" alt="Разбор на встрече в Zoom" loading="lazy">
+          <span class="watch__c">
+            <span class="watch__play"><svg viewBox="0 0 24 24" fill="#F4F1E9"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="watch__t">Посмотреть открытый разбор</span>
+          </span>
+        </a>
+        <h3>Как&nbsp;проходит&nbsp;встреча</h3>
+        <p>Созвон в Zoom. Разбираем опыты за&nbsp;неделю: где попытка остановилась, чего не&nbsp;хватило и&nbsp;что&nbsp;улучшить в&nbsp;следующий раз. Записи встреч всегда&nbsp;доступны.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Кому подойдёт&nbsp;курс</h2>
+    <p class="band__lede">Неважно, на&nbsp;каком вы&nbsp;сейчас уровне: методика универсальна. Но&nbsp;работа по&nbsp;ней начинается с&nbsp;ваших личных особенностей, поэтому задания и&nbsp;разборы учитывают, откуда вы&nbsp;стартуете.</p>
+    <div class="three">
+      <article class="st"><h3>Вы&nbsp;только&nbsp;начинаете</h3><p>Опыта пока нет. Возможно, вы&nbsp;уже пробовали техники, но&nbsp;они&nbsp;не&nbsp;сработали. Начинаем с&nbsp;самого начала: разбираемся, как&nbsp;всё устроено, налаживаем сон и&nbsp;делаем первые попытки по&nbsp;понятному&nbsp;плану.</p></article>
+      <article class="st"><h3>Опыт уже&nbsp;был</h3><p>Получилось один раз или&nbsp;два, а&nbsp;дальше повторить не&nbsp;выходит. Смотрим вашу попытку по&nbsp;этапам, находим, на&nbsp;чём она&nbsp;остановилась, и&nbsp;разбираемся, от&nbsp;чего зависел тот&nbsp;результат.</p></article>
+      <article class="st"><h3>Вы&nbsp;практикуете&nbsp;регулярно</h3><p>Попытки есть, но&nbsp;они пока неуправляемые: опыт короткий или&nbsp;без&nbsp;цели, и&nbsp;не&nbsp;до&nbsp;конца понятно, почему в&nbsp;одну ночь получается, а&nbsp;в&nbsp;другую нет. Работаем с&nbsp;длительностью, управлением и&nbsp;целями.</p></article>
+    </div>
+
+    <div class="notfit">
+      <h3>Курс не&nbsp;подойдёт</h3>
+      <ul>
+          <li>Если вы&nbsp;ищете готовую технику и&nbsp;не&nbsp;готовы вести&nbsp;записи</li>
+          <li>Если ждёте лечения тревоги или&nbsp;бессонницы — <span style="white-space:nowrap">это&nbsp;к&nbsp;врачу</span></li>
+          <li>Если ищете мистику и&nbsp;объяснения про&nbsp;тонкие&nbsp;миры</li>
+          <li>Если сейчас нет двух месяцев на&nbsp;занятия</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Что&nbsp;пишут&nbsp;участники</h2>
+    <div class="revs">
+      <figure class="rev"><img src="./assets/rev3.jpg" alt="Отзыв участницы" loading="lazy">
+        <figcaption>Проработали мою цель, она стала ясной и&nbsp;зажигающей</figcaption></figure>
+      <figure class="rev"><img src="./assets/rev2.jpg" alt="Отзыв участника" loading="lazy">
+        <figcaption>Не&nbsp;бросил и&nbsp;не&nbsp;терял веру в&nbsp;результат</figcaption></figure>
+      <figure class="rev"><img src="./assets/rev4.jpg" alt="Отчёт участницы курса о&nbsp;практике" loading="lazy">
+        <figcaption>Я&nbsp;во&nbsp;сне не&nbsp;летала лет&nbsp;20. Ощущения&nbsp;обалденные</figcaption></figure>
+    </div>
+    <p class="revs-more"><a href="https://t.me/+CDjFwQ5Lpnw4MmIy" target="_blank" rel="noopener">Ещё больше отзывов по&nbsp;ссылке</a></p>
+  </div>
+</section>
+
+<section class="band band--paper">
+  <div class="wrap author">
+    <div class="portrait"><img src="./assets/mikhail.png" alt="Михаил Барышников" loading="lazy"></div>
+    <div>
+      <h2>Михаил&nbsp;Барышников</h2>
+            <ul class="au-facts">
+        <li><b>с&nbsp;2023</b><span>преподаёт осознанные сновидения</span></li>
+        <li><b>300+</b><span>личных консультаций</span></li>
+        <li><b>30+</b><span>групп по&nbsp;осознанным снам</span></li>
+      </ul>
+<p>Практик и&nbsp;преподаватель осознанных сновидений. Дипломированный психолог и&nbsp;коуч, дипломированный&nbsp;REM-психолог.</p>
+      <p>Соавтор книги <b>«REM-психология. Решение психологических проблем в&nbsp;осознанном сне»</b> —
+        бестселлер на&nbsp;русском и&nbsp;английском&nbsp;языках.</p>
+      <ul class="links">
+        <li><a href="https://t.me/pr_dreamhacking" target="_blank" rel="noopener">Telegram-канал</a></li>
+        <li><a href="https://youtube.com/@pr_dreamhacking" target="_blank" rel="noopener">YouTube</a></li>
+                <li><a href="https://www.litres.ru/book/mihail-raduga/rem-psihologiya-reshenie-psihologicheskih-problem-v-osoznann-68970399/?lfrom=142326357&amp;ref_key=5543125c8ecb7e6f23c80ef041c80833f72764c12427d0f2880802647c8741dd&amp;ref_offer=1" target="_blank" rel="noopener">Книга на&nbsp;ЛитРес</a></li>
+        <li><a href="https://www.amazon.com/dp/B0CW9H5S2Z" target="_blank" rel="noopener">Книга на&nbsp;Amazon</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band band--paper">
+  <div class="wrap">
+    <h2>Гарантии</h2>
+    <div class="gu">
+      <div class="gu__col"><h3>Гарантируем</h3>
+      <ul class="gu__yes">
+        <li>Регулярную обратную связь на&nbsp;ваши&nbsp;попытки</li>
+        <li>Помощь в&nbsp;разработке вашей стратегии и&nbsp;её&nbsp;корректировку</li>
+        <li>Разбор ваших&nbsp;попыток</li>
+        <li>Критерии, по&nbsp;которым видно&nbsp;движение</li>
+        <li>План действий после&nbsp;курса</li>
+        <li>Возврат денег в&nbsp;течение первой недели, если&nbsp;вам что-то&nbsp;не&nbsp;понравилось</li>
+      </ul></div>
+      <div class="gu__no">
+        <h3>Чего не&nbsp;обещаем</h3>
+        <ul>
+          <li>Осознанный сон к&nbsp;конкретной&nbsp;дате</li>
+          <li>Одинаковый результат для&nbsp;всех</li>
+          <li>Мастерство за&nbsp;неделю</li>
+          <li>Решение жизненных проблем с&nbsp;помощью&nbsp;сна</li>
+        </ul>
+      </div>
+    </div>
+    <p class="term"><b>Два месяца — это&nbsp;длительность курса.</b> Когда получится у&nbsp;вас, зависит от&nbsp;вашего сна, режима и&nbsp;числа попыток: у&nbsp;кого-то&nbsp;первый результат появляется в&nbsp;первые недели, у&nbsp;кого-то&nbsp;ближе к&nbsp;концу.</p>
+    <p class="term term--floor"><b>Даже если за&nbsp;два месяца выйти не&nbsp;получится</b>, у&nbsp;вас будет понимание, как&nbsp;практиковать дальше, и&nbsp;чёткий план, которому останется следовать и&nbsp;дорабатывать его.&nbsp;Вы&nbsp;сможете сами разбирать свои попытки и&nbsp;доводить их&nbsp;до&nbsp;результата. Плюс месяц поддержки, на&nbsp;котором дошлифуем то,&nbsp;что&nbsp;осталось&nbsp;непонятным.</p>
+  </div>
+</section>
+
+<!-- ЗАЧЕМ ЭТО -->
+<section class="band band--paper band--result">
+  <div class="wrap">
+    <h2>Что&nbsp;будет у&nbsp;вас после&nbsp;курса</h2>
+    <ul class="bs">
+      <li><span class="bs__was">Осознанный сон случается сам и&nbsp;редко</span><span class="bs__arr" aria-hidden="true">→</span><span class="bs__now">Понимаете, как&nbsp;в&nbsp;него выходить и&nbsp;от&nbsp;чего зависит&nbsp;успех</span></li>
+      <li><span class="bs__was">Пробуете техники наугад</span><span class="bs__arr" aria-hidden="true">→</span><span class="bs__now">Своя система: время, техника и&nbsp;порядок действий под&nbsp;вас</span></li>
+      <li><span class="bs__was">Непонятно, почему не&nbsp;получилось</span><span class="bs__arr" aria-hidden="true">→</span><span class="bs__now">Сами разбираете попытку и&nbsp;находите, где&nbsp;она&nbsp;остановилась</span></li>
+      <li><span class="bs__was">Опыт короткий и&nbsp;без&nbsp;цели</span><span class="bs__arr" aria-hidden="true">→</span><span class="bs__now">Достигаете своей цели внутри сна и&nbsp;применяете это&nbsp;в&nbsp;жизни</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band band--dark" id="price">
+  <div class="wrap">
+    <h2>Сколько это&nbsp;стоит</h2>
+    <div class="price">
+      <div class="price__l">
+        <p class="price__v">29 990&nbsp;₽</p>
+        <p class="price__d">За&nbsp;первый уровень целиком: два месяца занятий и&nbsp;третий месяц&nbsp;поддержки.</p>
+        <a class="cta" href="https://t.me/mikebaryshnikov?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%2C%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D0%BE%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%21" target="_blank" rel="noopener">Записаться на&nbsp;курс</a>
+        <p class="price__note">Доступна рассрочка, а&nbsp;также оплата в&nbsp;любой валюте любыми способами.
+          Все&nbsp;подробности — по&nbsp;кнопке</p>
+      </div>
+      <div class="price__r">
+        <h3>Что&nbsp;входит</h3>
+        <ul>
+          <li>31 видеоурок в&nbsp;восьми&nbsp;модулях</li>
+          <li>Разбор вашего опыта в&nbsp;начале&nbsp;курса</li>
+          <li>Восемь живых встреч с&nbsp;разборами</li>
+          <li>Чат потока и&nbsp;ответы на&nbsp;ваши&nbsp;записи</li>
+          <li>Таблица практики и&nbsp;аудио-настройки</li>
+          <li>Третий месяц&nbsp;поддержки</li>
+          <li>Возврат денег в&nbsp;течение первой&nbsp;недели</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band band--paper" id="voprosy">
+  <div class="wrap">
+    <h2>Частые&nbsp;вопросы</h2>
+    <div class="faq">
+      <details class="faq__q">
+        <summary>Можно ли&nbsp;разобраться самостоятельно,&nbsp;без&nbsp;курса?</summary>
+        <p>Можно, первый осознанный сон многие получают сами. Сложнее понять, что&nbsp;мешает в&nbsp;другие ночи: проснулись не&nbsp;в&nbsp;то&nbsp;время, отвлеклись на&nbsp;технике или&nbsp;опыт закончился в&nbsp;первые секунды. На&nbsp;курсе мы&nbsp;разбираем каждую вашу попытку и&nbsp;находим, на&nbsp;каком этапе&nbsp;она&nbsp;остановилась.</p>
+      </details>
+      <details class="faq__q">
+        <summary>Уже были попытки, но&nbsp;ничего не&nbsp;вышло. Что&nbsp;будет&nbsp;по-другому?</summary>
+        <p>Начинаем с&nbsp;вашего прошлого опыта: в&nbsp;какое время вы&nbsp;пробовали, какой техникой и&nbsp;что&nbsp;происходило дальше. От&nbsp;этого зависит, что&nbsp;менять в&nbsp;первую очередь&nbsp;— время, технику или&nbsp;действия в&nbsp;первые секунды. Дальше после каждой попытки вы&nbsp;пишете короткую запись в&nbsp;чат, и&nbsp;я&nbsp;отвечаю на&nbsp;неё&nbsp;разбором.</p>
+      </details>
+      <details class="faq__q">
+        <summary>Что,&nbsp;если&nbsp;на&nbsp;курсе&nbsp;не&nbsp;получится?</summary>
+        <p>Если&nbsp;в&nbsp;первую неделю поймёте, что&nbsp;курс вам не&nbsp;подходит, деньги можно вернуть. Когда появится результат, зависит от&nbsp;вашего сна, режима и&nbsp;числа попыток: у&nbsp;кого-то в&nbsp;первые недели, у&nbsp;кого-то ближе к&nbsp;концу. Если&nbsp;за&nbsp;два месяца выйти в&nbsp;осознанный сон так&nbsp;и&nbsp;не&nbsp;удастся, у&nbsp;вас останется понятный план практики, а&nbsp;в&nbsp;третий месяц поддержки&nbsp;мы&nbsp;его&nbsp;доработаем.</p>
+      </details>
+      <details class="faq__q">
+        <summary>Плохо запоминаю сны. С&nbsp;этим можно&nbsp;начинать?</summary>
+        <p>Можно. Память сновидений мы&nbsp;смотрим в&nbsp;самом начале, когда разбираем вашу стартовую точку, а&nbsp;как&nbsp;её&nbsp;развивать, вы&nbsp;узнаете во&nbsp;втором&nbsp;модуле.</p>
+      </details>
+      <details class="faq__q">
+        <summary>Можно посмотреть, как&nbsp;проходит&nbsp;разбор?</summary>
+        <p>Да,&nbsp;<a href="https://kinescope.io/3SZL8zRXhk2i9FDYuppNMa" target="_blank" rel="noopener">запись одной из&nbsp;встреч</a> открыта. Встречи идут раз в&nbsp;неделю в&nbsp;Zoom, и&nbsp;их&nbsp;записи остаются&nbsp;у&nbsp;участников.</p>
+      </details>
+      <details class="faq__q">
+        <summary>Чем&nbsp;курс отличается от&nbsp;бесплатных&nbsp;роликов?</summary>
+        <p>Ролик объясняет технику сразу всем, а&nbsp;на&nbsp;курсе мы&nbsp;работаем с&nbsp;вашей практикой: с&nbsp;вашим временем пробуждения, вашей техникой, вашими записями. На&nbsp;каждую попытку вы&nbsp;получаете ответ в&nbsp;чате, раз в&nbsp;неделю разбираем опыт на&nbsp;встрече, и&nbsp;за&nbsp;два месяца вместе собираем план, который подходит именно&nbsp;вам.</p>
+      </details>
+      <details class="faq__q">
+        <summary>Это&nbsp;эзотерика?</summary>
+        <p>Нет.&nbsp;Осознанный сон&nbsp;— это&nbsp;сон, в&nbsp;котором вы&nbsp;понимаете, что&nbsp;спите. На&nbsp;курсе мы&nbsp;опираемся только на&nbsp;то,&nbsp;что&nbsp;можно проверить на&nbsp;себе: во&nbsp;сколько вы&nbsp;проснулись, какую технику выполнили и&nbsp;что&nbsp;было&nbsp;дальше.</p>
+      </details>
+      <details class="faq__q">
+        <summary>Что&nbsp;происходит после нажатия&nbsp;кнопки?</summary>
+        <p>Откроется Telegram с&nbsp;готовым сообщением мне, останется нажать «отправить». Я&nbsp;отвечу лично и&nbsp;расскажу подробнее про&nbsp;поток, а&nbsp;если&nbsp;вопрос в&nbsp;деньгах, обсудим рассрочку. После оплаты вы&nbsp;получаете доступ к&nbsp;урокам и&nbsp;чату&nbsp;потока.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="band band--night" id="zayavka">
+  <div class="wrap final">
+    <h2>Старт 17&nbsp;октября</h2>
+    <p class="final__seats">10&nbsp;мест</p>
+    <p class="final__why">По&nbsp;каждой попытке отвечаю сам и&nbsp;сам веду разборы, поэтому группа&nbsp;небольшая.</p>
+      <p class="final__note" id="zayavka">Кнопка откроет Telegram с готовым сообщением — останется нажать&nbsp;«отправить»</p>
+  </div>
+</section>
+
+<section class="band band--dark">
+  <div class="wrap">
+    <h2>Дальше есть три&nbsp;пути</h2>
+    <ol class="ways">
+      <li class="way"><span class="way__n">01</span>
+        <div><h3>Ничего не&nbsp;менять</h3><p>Осознания во&nbsp;сне будут случаться сами — редко
+          и&nbsp;чаще всего недолго. Впечатления останутся, а&nbsp;пользоваться этим как&nbsp;инструментом
+          на&nbsp;случайных осознаниях не&nbsp;выйдет.</p></div></li>
+      <li class="way"><span class="way__n">02</span>
+        <div><h3>Разбираться&nbsp;самому</h3><p>И&nbsp;это&nbsp;работает: первый осознанный сон вы,&nbsp;скорее всего, получите&nbsp;сами. Дальше сложнее — в&nbsp;нюансах регулярной практики нужно разбираться отдельно, они&nbsp;отличаются от&nbsp;нюансов первого&nbsp;опыта.</p></div></li>
+      <li class="way way--on"><span class="way__n">03</span>
+        <div><h3>Пройти&nbsp;курс</h3><p>Разобраться в&nbsp;принципах практики и&nbsp;в&nbsp;её&nbsp;нюансах, чтобы&nbsp;в&nbsp;голове была понятная стратегия: что&nbsp;делать ночью, почему именно так&nbsp;и&nbsp;что&nbsp;менять, когда не&nbsp;вышло.</p></div></li>
+    </ol>
+  </div>
+
+    <p class="ways__cta"><a class="cta cta--big" href="https://t.me/mikebaryshnikov?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%2C%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D0%BE%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%21" target="_blank" rel="noopener">Записаться на&nbsp;курс</a></p>
+  </section>
+
+<div class="dock" id="dock" aria-hidden="true">
+  <div class="wrap dock__in">
+    <p class="dock__t"><b>29&nbsp;990&nbsp;₽</b> за&nbsp;курс · старт 17&nbsp;октября</p>
+    <a class="cta dock__cta" href="https://t.me/mikebaryshnikov?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%2C%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D0%BE%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BF%D1%80%D0%BE%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%21" target="_blank" rel="noopener" tabindex="-1">Записаться</a>
+  </div>
+</div>
+
+<footer class="legal">
+  <div class="wrap">
+    <p class="legal__req"><span>ИП Барышников Михаил Дмитриевич</span><span>ИНН&nbsp;434548674765</span><span>ОГРНИП&nbsp;324774600671690</span><span><a href="mailto:remtherapy@yandex.ru">remtherapy@yandex.ru</a></span></p>
+    <p class="legal__docs"><a href="./oferta.html">Публичная оферта</a><a href="./politika.html">Политика конфиденциальности</a><a href="./soglasie.html">Согласие на&nbsp;обработку персональных&nbsp;данных</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var c = document.getElementById('ctor'); if(!c) return;
+  var tiles = c.querySelectorAll('.tile'), pages = c.querySelectorAll('.page');
+  var count = c.querySelector('.ctor__count b'), cur = 1, max = tiles.length;
+  function show(n){
+    n = Math.min(Math.max(n,1),max); cur = n;
+    tiles.forEach(function(t){
+      var i = +t.dataset.i;
+      t.classList.toggle('is-set', i < cur);
+      t.classList.toggle('is-now', i === cur);
+    });
+    pages.forEach(function(p){
+      var on = +p.dataset.i === cur;
+      p.hidden = !on;
+      if(on){ p.classList.remove('in'); void p.offsetWidth; p.classList.add('in'); }
+    });
+    count.textContent = ('0' + cur).slice(-2);
+  }
+  c.querySelector('.arw--next').addEventListener('click', function(){ show(cur+1); });
+  c.querySelector('.arw--prev').addEventListener('click', function(){ show(cur-1); });
+  tiles.forEach(function(t){ t.addEventListener('click', function(){ show(+t.dataset.i); }); });
+})();
+</script>
+
+<script>
+(function(){
+  // полоса прочитанного
+  var pr = document.getElementById('progress');
+  function onScroll(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    pr.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+  }
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // появление блоков
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var targets = document.querySelectorAll('.band > .wrap > *, .hero .col, .facts');
+    targets.forEach(function(el){ el.classList.add('rv'); });
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:.05});
+    targets.forEach(function(el){ io.observe(el); });
+    // первый экран показываем сразу
+    document.querySelectorAll('.hero .col, .facts').forEach(function(el){ el.classList.add('in'); });
+  }
+
+  // счёт цифр
+  var facts = document.querySelectorAll('.facts b');
+  var seen = false;
+  var fio = new IntersectionObserver(function(es){
+    if (seen || !es[0].isIntersecting) return; seen = true;
+    facts.forEach(function(b){
+      var end = parseInt(b.textContent, 10); if (isNaN(end)) return;
+      var t0 = performance.now(), dur = 900;
+      (function step(now){
+        var k = Math.min((now - t0) / dur, 1);
+        b.textContent = Math.round(end * (1 - Math.pow(1 - k, 3)));
+        if (k < 1) requestAnimationFrame(step);
+      })(t0);
+    });
+  }, {threshold:.4});
+  if (facts.length) fio.observe(facts[0].closest('.facts'));
+})();
+</script>
+
+
+<script>
+(function(){
+  var mods = document.querySelectorAll('.mod');
+  var bars = document.querySelectorAll('.mbar li');
+  if (!mods.length || !bars.length) return;
+  function sync(){
+    bars.forEach(function(b){ b.classList.remove('is-on'); });
+    mods.forEach(function(m, i){ if (m.open && bars[i]) bars[i].classList.add('is-on'); });
+  }
+  mods.forEach(function(m){ m.addEventListener('toggle', sync); });
+  sync();
+})();
+</script>
+
+<script>
+(function(){
+  var box = document.getElementById('film');
+  if (!box) return;
+  box.addEventListener('click', function(){
+    if (box.dataset.on) return;
+    box.dataset.on = '1';
+    var f = document.createElement('iframe');
+    f.src = 'https://kinescope.io/embed/' + box.dataset.kid + '?autoplay=1';
+    f.allow = 'autoplay; fullscreen; picture-in-picture; encrypted-media;';
+    f.setAttribute('allowfullscreen','');
+    f.frameBorder = '0';
+    f.className = 'hero-film__frame';
+    box.innerHTML = '';
+    box.appendChild(f);
+  });
+})();
+</script>
+<script>
+(function(){
+  var d = document.getElementById('dock'), h = document.querySelector('.hero');
+  if(!d || !h || !('IntersectionObserver' in window)) return;
+  var btn = d.querySelector('a');
+  new IntersectionObserver(function(e){
+    var on = !e[0].isIntersecting;
+    d.classList.toggle('is-on', on);
+    d.setAttribute('aria-hidden', on ? 'false' : 'true');
+    btn.tabIndex = on ? 0 : -1;
+    document.body.style.paddingBottom = on ? d.offsetHeight + 'px' : '';
+  }).observe(h);
+})();
+</script>
+</body>
+</html>
